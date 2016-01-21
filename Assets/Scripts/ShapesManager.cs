@@ -9,7 +9,7 @@ public class ShapesManager : MonoBehaviour
 {
     public Text DebugText, ScoreText, enemyScoreText;
 
-    Player player;
+    PlayerConnector player;
 
     public bool ShowDebugInfo = false;
     //candy graphics taken from http://opengameart.org/content/candy-pack-1
@@ -38,7 +38,7 @@ public class ShapesManager : MonoBehaviour
     {
         DebugText.enabled = ShowDebugInfo;
 
-        player = GameObject.FindGameObjectWithTag("shapesmanager").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("shapesmanager").GetComponent<PlayerConnector>();
     }
 
     // Use this for initialization
@@ -570,6 +570,11 @@ public class ShapesManager : MonoBehaviour
         }
 
         throw new System.Exception("Wrong type, check your premade level");
+    }
+
+    public void setScore(int score)
+    {
+        this.score = score;
     }
 
     public int getScore()

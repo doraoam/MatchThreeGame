@@ -1,24 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public int score = 0;
 
     public int enemyScore = 0;
-
-    ShapesManager main;
-
-    void Awake()
-    {
-        main = GameObject.FindGameObjectWithTag("shapesmanager").GetComponent<ShapesManager>();
-    }
-
-    public void setScore()
-    {
-        score = main.getScore();        
-    }
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
@@ -30,5 +17,25 @@ public class Player : MonoBehaviour
         {
             enemyScore = (int)stream.ReceiveNext();   
         }
+    }
+
+    public void setScore(int score)
+    {
+        this.score = score;
+    }
+
+    public int getScore()
+    {
+        return score;
+    }
+
+    public void setEnemyScore(int score)
+    {
+        this.enemyScore = score;
+    }
+
+    public int getEnemyScore()
+    {
+        return enemyScore;
     }
 }

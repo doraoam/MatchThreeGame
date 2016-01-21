@@ -1,0 +1,85 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.068 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Admin\Documents\MatchThreeGame\Ver\0.5_Data\Managed\System.dll (this message is harmless)
+The file 'C:/Users/Admin/Documents/MatchThreeGame/Ver/0.5_Data/mainData' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+ 
+(Filename:  Line: 241)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShapesManager.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 31b8 -> priority: 1 
+The file 'C:/Users/Admin/Documents/MatchThreeGame/Ver/0.5_Data/resources.assets' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+ 
+(Filename:  Line: 241)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShapesManager.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject)
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32)
+NetworkManager:OnJoinedRoom()
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[])
+NetworkingPeer:OnEvent(EventData)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update()
+ 
+(Filename:  Line: -1)
+
+ConnectUsingSettings() failed. Can only connect while in state 'Disconnected'. Current state: Connected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShapesManager.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject)
+NetworkingPeer:OnEvent(EventData)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update()
+ 
+(Filename:  Line: -1)
+
+ConnectUsingSettings() failed. Can only connect while in state 'Disconnected'. Current state: Connected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
